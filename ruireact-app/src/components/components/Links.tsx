@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 interface Props {
     items: string[];
@@ -13,11 +14,12 @@ const Links = ({ items, icons, links }: Props) => {
                 {items.map((item, index) => (
                     <li key={index} className="list-group-item">
                         {React.createElement(icons[index])}
-                        <a href={links[index]}>{item}</a>
+                        <Link to={links[index]}>{item}</Link>
                     </li>
                 ))}
 
             </ul>
+
         </div>
     )
 }

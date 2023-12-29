@@ -1,4 +1,9 @@
-*{
+html {
+    background-repeat: no-repeat;
+    height: 100%
+}
+
+* {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -8,13 +13,21 @@ body {
     background: -webkit-linear-gradient(45deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
     background: linear-gradient(45deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#833ab4", endColorstr="#fcb045", GradientType=1);
-    overflow: hidden;
-    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    min-height: 100%;
 }
 
 a {
-    text-decoration: none!important;
-    color: inherit!important;
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+iframe {
+    margin: 10% 22.5%;
+    width: 55%;
+    height: 165vh;
 }
 
 
@@ -25,23 +38,39 @@ a {
     top: 45vh;
     left: -10vw;
     background-color: rgb(238, 238, 238);
-    border-radius: 87% 13% 100% 0% / 29% 36% 64% 71% ;
+    border-radius: 87% 13% 100% 0% / 29% 36% 64% 71%;
 
-    -webkit-box-shadow: -2px -1px 15px 7px rgba(0,0,0,0.25);
-    -moz-box-shadow: -3px -2px 30px 14px rgba(0,0,0,0.25);
-    box-shadow: -4px -3px 45px 21px rgba(0,0,0,0.25);
+    -webkit-box-shadow: -2px -1px 15px 7px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: -3px -2px 30px 14px rgba(0, 0, 0, 0.25);
+    box-shadow: -4px -3px 45px 21px rgba(0, 0, 0, 0.25);
 }
 
 /* Navbar */
 
-#navbar nav{
-    margin-left: 10%;
-    margin-right: 10%;
+#navbar {
+    padding: 1% 10%;
 }
 
-#navbar nav *{
+#navbar * {
     color: white;
     font-weight: bold;
+}
+
+.divisor {
+    border: 0;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#ffffff", GradientType=1);
+}
+
+#navbar.default {
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(13.9px);
+    -webkit-backdrop-filter: blur(13.9px);
 }
 
 
