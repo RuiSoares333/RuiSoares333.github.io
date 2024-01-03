@@ -1,14 +1,25 @@
 import React from 'react';
-import Links from '../components/Links';
+import { IconType } from 'react-icons';
+
+import MyInfo from '../components/MyInfo';
 
 interface Props {
-    items: string[];
-    icons: string[];
-    links: string[];
+    href: string;
+    icon: IconType;
+    text: string;
+    name: string;
 }
 
-const Home = ({ items, icons, links }: Props) => {
+interface HomeProps {
+    links: Props[];
+    pageTitle: string;
+}
+
+const Home: React.FC<HomeProps> = ({ links, pageTitle }) => {
+
     React.useEffect(() => {
+        document.title = "Rui Soares | " + (pageTitle ? pageTitle : "Home");
+
         // Disable scroll when component mounts
         document.body.style.overflow = 'hidden';
 
@@ -16,12 +27,12 @@ const Home = ({ items, icons, links }: Props) => {
         return () => {
             document.body.style.overflow = 'visible';
         };
-    }, []);
+    }, [pageTitle]);
 
     return (
         <>
-            <Links items={items} icons={icons} links={links} />
-            <div id="egg"></div>
+            <MyInfo links={links} />
+            {/* <div id="egg"></div> */}
         </>
     )
 }
