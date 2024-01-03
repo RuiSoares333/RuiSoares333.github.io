@@ -20,8 +20,8 @@ const MyInfo: React.FC<MyInfoProps> = ({ links }) => {
             <p>3rd year Student of <b>Informatics</b> and <b>Computer Engineering</b></p>
             <div className="card-body d-flex flex-column">
                 {links.map((item, index) => (
-                    <li key={index} className="nav-item mx-lg-5 mx-3 my-1">
-                        <Link to={item.href}><item.icon /><b>{item.name}</b></Link>
+                    <li key={index} className="nav-item my-1">
+                        <Link to={item.href}><item.icon className="me-3"/><b>{item.name}</b></Link>
                     </li>
                 ))}
             </div>
