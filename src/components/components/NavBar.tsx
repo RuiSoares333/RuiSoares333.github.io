@@ -30,7 +30,7 @@ const NavBar = ({ links }: { links: Props[] }) => {
         <div className={'fixed-top ' + (scrolling ? 'dark' : 'default')}>
             <nav id="navbar" className='navbar navbar-expand-lg'>
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="#">
+                    <a className="navbar-brand" href="/">
                         Rui Soares
                     </a>
                     <button

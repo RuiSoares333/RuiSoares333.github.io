@@ -1,7 +1,8 @@
 import React from 'react';
-import { IconType } from 'react-icons';
+import {IconType} from 'react-icons';
 
 import MyInfo from '../components/MyInfo';
+import HomeCard from '../components/HomeCard';
 
 interface Props {
     href: string;
@@ -15,24 +16,20 @@ interface HomeProps {
     pageTitle: string;
 }
 
-const Home: React.FC<HomeProps> = ({ links, pageTitle }) => {
+const Home: React.FC<HomeProps> = ({links, pageTitle}) => {
 
     React.useEffect(() => {
         document.title = "Rui Soares | " + (pageTitle ? pageTitle : "Home");
-
-        // Disable scroll when component mounts
-        document.body.style.overflow = 'hidden';
-
-        // Re-enable scroll when component unmounts
-        return () => {
-            document.body.style.overflow = 'visible';
-        };
     }, [pageTitle]);
 
     return (
         <>
-            <MyInfo links={links} />
-            {/* <div id="egg"></div> */}
+            <div id="egg"></div>
+            <div className={"d-flex flex-row"}>
+                <MyInfo links={links}/>
+                <HomeCard/>
+            </div>
+
         </>
     )
 }

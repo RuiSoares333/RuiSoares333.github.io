@@ -14,7 +14,7 @@ import Curriculo from './components/pages/Curriculo';
 
 
 const linksData = [
-    { href: "/curriculo", icon: FaScroll, text: "Resumé", name: "" },
+    { href: "/curriculo", icon: FaScroll, text: "Resume", name: "" },
     { href: "/projetos", icon: FaBoxArchive, text: "Projects", name: "" },
 
     { href: "https://sigarra.up.pt/feup/", icon: FaBuildingColumns, text: "", name: "FEUP" },
