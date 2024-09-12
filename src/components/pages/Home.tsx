@@ -1,4 +1,6 @@
 import React from 'react';
+import { useEffect } from 'react';
+
 import {IconType} from 'react-icons';
 
 import MyInfo from '../components/MyInfo';
@@ -18,8 +20,15 @@ interface HomeProps {
 
 const Home: React.FC<HomeProps> = ({links, pageTitle}) => {
 
-    React.useEffect(() => {
-        document.title = "Rui Soares | " + (pageTitle ? pageTitle : "Home");
+    useEffect(() => {
+        document.title = `Rui Soares | ${pageTitle || "Home"}`;
+    
+        const eggElement = document.getElementById('egg');
+        document.body.style.overflow = eggElement ? 'hidden' : '';
+    
+        return () => {
+            document.body.style.overflow = '';
+        };
     }, [pageTitle]);
 
     return (

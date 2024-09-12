@@ -1,5 +1,7 @@
 import './App.css';
 import NavBar from './components/components/NavBar';
+import Home from './components/pages/Home';
+import Curriculo from './components/pages/Curriculo';
 
 import {
     BrowserRouter as Router,
@@ -7,10 +9,8 @@ import {
     Route,
     Navigate,
 } from "react-router-dom";
-import { FaGithub, FaEnvelope, FaScroll, FaLinkedin, FaBuildingColumns, FaLocationDot, FaPhone, FaBoxArchive } from "react-icons/fa6";
 
-import Home from './components/pages/Home';
-import Curriculo from './components/pages/Curriculo';
+import { FaGithub, FaEnvelope, FaScroll, FaLinkedin, FaBuildingColumns, FaLocationDot, FaPhone, FaBoxArchive } from "react-icons/fa6";
 
 
 const linksData = [
@@ -20,7 +20,7 @@ const linksData = [
     { href: "https://sigarra.up.pt/feup/", icon: FaBuildingColumns, text: "", name: "FEUP" },
     { href: "https://g.co/kgs/4qnVRA9", icon: FaLocationDot, text: "", name: "Porto, Portugal" },
     { href: "tel:351912744563", icon: FaPhone, text: "", name: "912 744 563" },
-    { href: "rui.rprs3@gmail.com", icon: FaEnvelope, text: "Email", name: "rui.rprs3@gmail.com" },
+    { href: "mailto:rui.rprs3@gmail.com", icon: FaEnvelope, text: "Email", name: "rui.rprs3@gmail.com" },
     { href: "https://github.com/RuiSoares333", icon: FaGithub, text: "Github", name: "RuiSoares333" },
     { href: "https://www.linkedin.com/in/rui-soares333/", icon: FaLinkedin, text: "Linkedin", name: "rui-soares333" },
 ]
@@ -30,7 +30,6 @@ const navLinks = [
 ]
 
 const homeLinks = linksData.slice(2, 8);
-
 
 function App() {
 

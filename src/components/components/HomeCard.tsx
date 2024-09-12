@@ -18,25 +18,25 @@ const HomeCard = () => {
         {
             icon: IoMusicalNoteOutline,
             title: "Music",
-            description: <p>I love playing <b>guitar</b> and listening to <b>Dream Theater</b> and Polyphia.</p>,
+            description: <>I love playing <b>guitar</b> and listening to <b>Dream Theater</b> and Polyphia.</>,
             color: "#FD1D1D",
         },
         {
             icon: GiLeechingWorm,
             title: "Movies",
-            description: <p>My favorite movies are <b>Dune 2</b> and <b>The Revenge of the Sith</b>.</p>,
+            description: <>My favorite movies are <b>Dune 2</b> and <b>The Revenge of the Sith</b>.</>,
             color: "#FCB045"
         },
         {
             icon: LuGamepad,
             title: "Gaming",
-            description: <p>I love to play video games, especially RPGs and strategy games.</p>,
+            description: <>I love to play video games, especially RPGs and strategy games.</>,
             color: "#9747FF"
         },
         {
             icon: MdLightbulbOutline,
             title: "Programming",
-            description: <p>My favorite areas involve <b>Front-End</b>, Java and C++.</p>,
+            description: <>My favorite areas involve <b>Front-End</b>, Java and C++.</>,
             color: "#4F5A69"
         }
     ];
