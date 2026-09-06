@@ -16,7 +16,7 @@ interface MyInfoProps {
 const MyInfo: React.FC<MyInfoProps> = ({ links }) => {
   return (
     <div id="my-info" className="relative flex flex-col">
-      <img src="Rui Soares Foto Quadrada.jpg" alt="My Github Image" />
+      <img src="RuiSoaresFotoQuadrada.jpg" alt="My Github Image" />
       <h5 className="font-bold">Rui Soares</h5>
       <p>
         <b>M.Sc. Software Engineer</b>
